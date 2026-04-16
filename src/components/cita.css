@@ -29,3 +29,13 @@
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
+  .button.eliminar{
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+  }
+  
+  .button.eliminar:hover {
+    background-color: #c10059;
+    color: white;
+    margin-top: 2rem;
+  }

@@ -6,37 +6,17 @@ function Listado({ citas = [], eliminarCita }) {
     <>
       <h2>Administra tus citas</h2>
 
-      {/* hardcodeadas */}
-      <Cita
-        mascota="Nina"
-        propietario="Martin"
-        fecha="2021-08-05"
-        hora="08:20"
-        sintomas="Le duele la pierna"
-      />
-
-      <Cita
-        mascota="Sifon"
-        propietario="Flecha"
-        fecha="2023-08-05"
-        hora="09:24"
-        sintomas="Duerme mucho"
-      />
-
-      <Cita
-        mascota="Floki"
-        propietario="Ari"
-        fecha="2023-08-05"
-        hora="16:15"
-        sintomas="No está comiendo"
-      />
-
-      {/* dinámicas */}
+      {/* dinamicas */}
+      
       {citas.map((cita) => (
         <Cita
           key={cita.id}
-          {...cita}
           id={cita.id}
+          mascota={cita.mascota}
+          propietario={cita.propietario}
+          fecha={cita.fecha}
+          hora={cita.hora}
+          sintomas={cita.sintomas}
           eliminarCita={eliminarCita}
         />
       ))}

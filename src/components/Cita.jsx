@@ -9,14 +9,14 @@ function Cita({ id, mascota, propietario, fecha, hora, sintomas, eliminarCita })
       <p>Hora: <span>{hora}</span></p>
       <p>Síntomas: <span>{sintomas}</span></p>
 
-      {eliminarCita && (
-        <button
-          className="button eliminar u-full-width"
-          onClick={() => eliminarCita(id)}
-        >
-          Eliminar ×
-        </button>
-      )}
+    <button
+      className="button eliminar u-full-width"
+      onClick={() => {
+        eliminarCita(id);
+      }}
+    >
+      Eliminar ×
+    </button>
     </div>
   );
 }
